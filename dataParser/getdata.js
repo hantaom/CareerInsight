@@ -14,58 +14,64 @@
 // });
 
 
-http = require('http');
-fs = require('fs');
-server = http.createServer( function(req, res) {
+// http = require('http');
+// fs = require('fs');
+// server = http.createServer( function(req, res) {
+//
+//     console.dir(req.param);
+//
+//     if (req.method == 'POST') {
+//         console.log("POST");
+//         var body = '';
+//         req.on('data', function (data) {
+//             body += data;
+//             console.log("Partial body: " + body);
+//         });
+//         req.on('end', function () {
+//             console.log("Body: " + body);
+//         });
+//         res.writeHead(200, {'Content-Type': 'text/html'});
+//         res.end('post received');
+//     }
+//     else
+//     {
+//         console.log("GET");
+//         //var html = '<html><body><form method="post" action="http://localhost:3000">Name: <input type="te,t" name="name" /><input type="submit" value="Submit" /></form></body>';
+//         //var html = fs.readFileSync('index.html');
+//         res.writeHead(200, {'Content-Type': 'text'});
+//         res.send("thanks");
+//         //console.log(res.end("thanks"));
+//     }
+//
+// });
+//
+// port = 3000;
+// host = '127.0.0.1';
+// server.listen(port, host);
+// console.log('Listening at http://' + host + ':' + port);
 
-    console.dir(req.param);
+var http = require('http');
+var fs = require('fs');
+var connect = require('connect');
+var express = require('express');
 
-    if (req.method == 'POST') {
-        console.log("POST");
-        var body = '';
-        req.on('data', function (data) {
-            body += data;
-            console.log("Partial body: " + body);
-        });
-        req.on('end', function () {
-            console.log("Body: " + body);
-        });
-        res.writeHead(200, {'Content-Type': 'text/html'});
-        res.end('post received');
-    }
-    else
-    {
-        console.log("GET");
-        //var html = '<html><body><form method="post" action="http://localhost:3000">Name: <input type="te,t" name="name" /><input type="submit" value="Submit" /></form></body>';
-        //var html = fs.readFileSync('index.html');
-        res.writeHead(200, "Access-Control-Allow-Origin: *");
-        res.end("thanks");
-        //console.log(res.end("thanks"));
-    }
-
+var app = express();
+app.use(function(req, res, next) {
+    res.header("Access-Control-Allow-Origin", "*");
+    res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+    next();
 });
 
-port = 3000;
-host = '127.0.0.1';
-server.listen(port, host);
-console.log('Listening at http://' + host + ':' + port);
+app.get('/', function(req, res  ) {
+    res.json('Hello World');
+});
 
-// var http = require('http');
-// var fs = require('fs');
-// var connect = require('connect');
-// var express = require('express');
-//
-// var app = express();
-// app.get('/', function(req, res  ) {
-//     res.json('Hello World');
-// });
-//
-//
-// var server = app.listen(8888, function(){
-//     var host = server.address().address;
-//     var port = server.address().port;
-//     console.log("Example app listening at http://%s:%s", host, port);
-// });
+
+var server = app.listen(8888, function(){
+    var host = server.address().address;
+    var port = server.address().port;
+    console.log("Example app listening at http://%s:%s", host, port);
+});
 
 
 
