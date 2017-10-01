@@ -14,11 +14,11 @@
 function postData(input) {
     $.ajax({
         type: "GET",
-        url: "http://localhost:8080",
+        url: "http://localhost:8888",
         //data: { param: input },
         success : function(text)
          {
-             console.log(text);
+             alert(text);
          }
     });
 
@@ -32,5 +32,5 @@ function callbackFunc(response) {
 
 
 document.getElementById("submitButton").addEventListener("click", function(){
-	//postData('HI')
+	postData('parsedata.py --keyword Legislator')
 });
