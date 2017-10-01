@@ -23,7 +23,7 @@
                     <a class="nav-link" href="../homeStudent/index.html">Home <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="../search/index.html">Link</a>
+                    <a class="nav-link" href="http://localhost:8080/#/">Connect</a>
                 </li>
             </ul>
             <form class="form-inline my-2 my-lg-0">
@@ -39,34 +39,85 @@
 <body>
 
 <div id="page">
+
     
-    <h1>Search a Keyword here:</h1>
-    
-    <form id="searchForm" method="post">
+    <form id="searchForm">
 		<fieldset>
         
            	<input id="s" type="text" />
-            
-            <input type="submit" value="Submit" id="submitButton"/>
-            
-            <div id="searchInContainer">
-                <input type="radio" name="check" value="web" id="searchWeb" />
-                <label for="searchWeb">Search Our Database</label>
-			</div>
+
+            <!-- Trigger/Open The Modal -->
+            <button id="myBtn" type="button" class="btn btn-success" onclick="getModal(this)">search</button>
+
+            <!-- The Modal -->
+            <div id="myModal" class="modal">
+
+            <!-- Modal content -->
+            <div class="modal-content">
+                <div class="modal-header">
+                <span class="close">&times;</span>
+                <h2>Modal Header</h2>
+                </div>
+                <div class="modal-body">
+                <p>Some text in the Modal Body</p>
+                <p>Some other text...</p>
+                </div>
+                <div class="modal-footer">
+                <h3>Modal Footer</h3>
+                </div>
+            </div>
+
+            </div>
+
+            <script>
+                function onclick(sel){
+                    document.getElementById("myModal").style.display="block";
+                }
+            // Get the modal
+            var modal = document.getElementById('myModal');
+
+            // Get the button that opens the modal
+            var btn = document.getElementById("myBtn");
+
+            // Get the <span> element that closes the modal
+            var span = document.getElementsByClassName("close")[0];
+
+            // When the user clicks the button, open the modal 
+            btn.onclick = function() {
+                modal.style.display = "block";
+            }
+
+            // When the user clicks on <span> (x), close the modal
+            span.onclick = function() {
+                modal.style.display = "none";
+            }
+
+            // When the user clicks anywhere outside of the modal, close it
+            window.onclick = function(event) {
+                if (event.target == modal) {
+                    modal.style.display = "none";
+                }
+            }
+            </script>
                         
-            <ul class="icons">
-                <li class="web" title="Web Search" data-searchType="web">Web</li>
-                <li class="images" title="Image Search" data-searchType="images">Images</li>
-                <li class="news" title="News Search" data-searchType="news">News</li>
-                <li class="videos" title="Video Search" data-searchType="video">Videos</li>
+                <div id="searchInContainer">
+                    <input type="radio" name="check" value="web" id="searchWeb" />
+                    <label for="searchWeb">Search Our Database</label>
+                </div>
+                                    
+               <ul class="icons">
+                    <li class="web" title="Web Search" data-searchType="web">Web</li>
+                    <li class="images" title="Image Search" data-searchType="images">Images</li>
+                     <li class="news" title="News Search" data-searchType="news">News</li>
+                     <li class="videos" title="Video Search" data-searchType="video">Videos</li>
             </ul>
-            
+                        
         </fieldset>
     </form>
 
-    <div id="resultsDiv"></div>
-    
-</div>
+                <div id="resultsDiv"></div>
+                
+            </div>
 
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
 <script src="script.js"></script>
