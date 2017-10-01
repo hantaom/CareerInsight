@@ -39,6 +39,7 @@ class DataFetcher:
 
     for item in self.FilteredArray:
       print item
+
     #print self.FilteredArray
 
 
