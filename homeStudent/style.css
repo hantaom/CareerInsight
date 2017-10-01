@@ -1,0 +1,57 @@
+body{
+    background-color: white;
+    color: #303030;
+    font-family: 'Helvetica Neue', 'Arial', sans-serif;
+    margin: 20px;
+}
+
+main{
+    background-color: ghostwhite;
+    margin: 20px auto;
+    max-width: 450px;
+    padding: 20px;
+    border: 2px solid;
+    border-radius: 25px;
+    border-color: ghostwhite;
+}
+
+li {
+    background-color: lightgrey;
+    padding: 8px;
+    border: 2px solid;
+    border-radius: 10px;
+    border-color: lightgrey;
+    margin: 5px;
+
+}
+
+li:nth-child(odd) {
+    background-color: white;
+    padding: 8px;
+    border: 2px solid;
+    border-radius: 10px;
+    border-color: white;
+}
+
+button {
+    background-color: cornflowerblue;
+    border: none;
+    border-radius: 3px;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 5px 10px;
+    text-transform: uppercase;
+}
+
+input {
+    border: 1px solid;
+    border-radius: 3px;
+    border-color: grey
+    font-size: 15px;
+    padding: 5px;
+}
+
+#initials{
+    margin-left: 45px;
+}

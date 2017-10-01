@@ -1,9 +1,12 @@
 <!DOCTYPE html>
 <html lang="en" xmlns:height="http://www.w3.org/1999/xhtml">
+<div overflow="scroll">
 <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js"></script>
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
@@ -19,7 +22,7 @@
                     <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
+                    <a class="nav-link" href="../client/index.html">Connect</a>
                 </li>
             </ul>
             <form class="form-inline my-2 my-lg-0">
@@ -29,11 +32,12 @@
         </div>
     </nav>
 </head>
+
 <body>
 <div class="first">
     <label for="field">Field</label>
     <br>
-    <select class="field" id="field" style="width: 400px; height: 40px;">
+    <select class="field" id="field" style="width: 400px; height: 40px;" onChange="getField(this);">
         <option disabled="true" selected="true">Please select a field of interest</option>
         <option value="0">Management occupations</option>
         <option value="1">Business, finance and administration occupations</option>
@@ -46,8 +50,25 @@
         <option value="8">Natural resources, agriculture and related production occupations</option>
         <option value="9">Occupations in manufacturing and utilities</option>
     </select>
+    <script>
+        function getField(sel)
+        {
+            document.getElementById("education").disabled=false;
+        }
+        function getEdu(sel)
+        {
+            document.getElementById("spec").disabled=false;
+        }
+        function getSpec(sel)
+        {
+            document.getElementById("job").disabled=false;
+        }
+        function getJob(sel)
+        {
+            document.getElementById("dataTable").style.display="block";
+        }
+    </script>
 </div>
-<br>
 <br>
 
 <div class="second">
@@ -76,19 +97,109 @@
         • No formal educational requirements</label>
     <br>
 
-    <select class="education" id="education" style="width: 400px; height: 40px;">
+    <select class="education" id="education" style="width: 400px; height: 40px;" onChange="getEdu(this);" disabled="disabled">
         <option disabled="true" selected="true">Please select</option>
         <option value="0">Skill level A</option>
         <option value="2">Skill level B</option>
         <option value="4">Skill level C</option>
         <option value="6">Skill level D</option>
     </select>
+
+    <br>
+    <br>
+    <label for="spec" >Please indicate your specialization:</label><br>
+    <select class="spec" id="spec" style="width: 400px; height: 40px;" onChange="getSpec(this);" disabled="disabled">
+        <option disabled="true" selected="true">Please select a specialization</option>
+        <option value="1">Physicists and astronomers</option>
+        <option value="2">Life science professionals</option>
+        <option value="3"> Civil, mechanical, electrical and chemical engineers</option>
+        <option value="4">Other engineers</option>
+    </select>
+
+    <br>
+    <br>
+    <label for="spec" >Please choose a job:</label>
+    <br>
+    <select class="job" id="job" style="width: 400px; height: 40px;" onChange="getJob(this);" disabled="disabled">
+        <option disabled="true" selected="true">Please select a job</option>
+        <option value="1">Physical science professionals</option>
+        <option value="2">Chemists</option>
+        <option value="3">Geoscientists and oceanographers</option>
+        <option value="4">Meteorologists and climatologists</option>
+    </select>
 </div>
+
+<table id="dataTable" class="table table-striped" style="display:none;">
+    <thead>
+    <tr>
+        <th>#</th>
+        <th>Year</th>
+        <th>Demand</th>
+        <th>Supply</th>
+        <th>Supply less demand</th>
+        <th>Average salary (year)</th>
+        <th></th>
+    </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th scope="row">1</th>
+            <td>2015</td>
+            <td>16, 984</td>
+            <td>11, 246</td>
+            <td>5, 738</td>
+            <td>$52, 849</td>
+        </tr>
+        <tr>
+            <th scope="row">2</th>
+            <td>2016</td>
+            <td>13, 425</td>
+            <td>12, 321</td>
+            <td>1, 104</td>
+            <td>$53, 894</td>
+        </tr>
+        <tr>
+            <th scope="row">3</th>
+            <td>2017</td>
+            <td>16, 811</td>
+            <td>11, 112</td>
+            <td>5, 699</td>
+            <td>$53, 564</td>
+        </tr>
+        <tr>
+            <th scope="row">4</th>
+            <td>2018</td>
+            <td>14, 328</td>
+            <td>10, 998</td>
+            <td>3, 330</td>
+            <td>$59, 564</td>
+        </tr>
+        <tr>
+            <th scope="row">5</th>
+            <td>2019</td>
+            <td>13, 154</td>
+            <td>9, 953</td>
+            <td>3, 201</td>
+            <td>$60, 367</td>
+        </tr>
+        <tr>
+            <th scope="row">6</th>
+            <td>2020</td>
+            <td>12, 849</td>
+            <td>11, 053</td>
+            <td>1, 796</td>
+            <td>$60, 415</td>
+        </tr>
+    </tbody>
+</table>
 
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+<br><br><br>
+
 </body>
+</div>
 </html>

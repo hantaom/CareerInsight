@@ -38,9 +38,8 @@ class DataFetcher:
     self.Filter_by_location()
 
     for item in self.FilteredArray:
-      with open('test.txt', 'w') as fin:
-        fin.write(str(item))
-    #print item
+      print item
+
     #print self.FilteredArray
 
 
