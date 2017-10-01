@@ -6,7 +6,7 @@ body{
 }
 
 main{
-    background-color: ghostwhite;
+    background-color: salmon;
     margin: 20px auto;
     max-width: 450px;
     padding: 20px;
@@ -16,7 +16,7 @@ main{
 }
 
 li {
-    background-color: lightgrey;
+    background-color: salmon;
     padding: 8px;
     border: 2px solid;
     border-radius: 10px;
@@ -34,7 +34,7 @@ li:nth-child(odd) {
 }
 
 button {
-    background-color: cornflowerblue;
+    background-color: salmon;
     border: none;
     border-radius: 3px;
     color: white;
@@ -62,3 +62,47 @@ h1{
 	text-indent:-9999px;
     overflow: hidden;
 }
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 5%;
+    padding-left: 30%;
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 60%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+.modal-header {
+    padding: 20px 160px;
+    background-color: #5cb85c;
+    color: white;
+}
+
+/* Modal Body */
+.modal-body {padding: 20px 16px;}
