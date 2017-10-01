@@ -1,9 +1,17 @@
 body{
-    background-color: white;
-    color: #303030;
     font-family: 'Helvetica Neue', 'Arial', sans-serif;
-    margin: 20px;
+    background-image: url(http://www.interliance.com/NEWSITE/wp-content/uploads/Business.jpg);
+    background-size: 1000px auto;
+    background-attachment: fixed;
+    opacity: 0.9;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
 }
+
 
 main{
     background-color: ghostwhite;
@@ -15,23 +23,6 @@ main{
     border-color: ghostwhite;
 }
 
-li { 
-    background-color: lightgrey; 
-    padding: 8px;
-    border: 2px solid;
-    border-radius: 10px;
-    border-color: lightgrey;
-    margin: 5px;
-    
-}
-
-li:nth-child(odd) {
-    background-color: white; 
-    padding: 8px;
-    border: 2px solid;
-    border-radius: 10px;
-    border-color: white;
-}
 
 button {
     background-color: cornflowerblue;
@@ -47,11 +38,29 @@ button {
 input {
     border: 1px solid;
     border-radius: 3px;
-    border-color: grey
+    border-color: grey;
     font-size: 15px;
     padding: 5px;
 }
 
 #initials{
     margin-left: 45px;
+}
+
+li {
+    background-color: lightgrey;
+    padding: 8px;
+    border: 2px solid;
+    border-radius: 10px;
+    border-color: lightgrey;
+    margin: 5px;
+
+}
+
+li:nth-child(odd) {
+    background-color: white;
+    padding: 8px;
+    border: 2px solid;
+    border-radius: 10px;
+    border-color: white;
 }
