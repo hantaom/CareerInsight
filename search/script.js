@@ -13,20 +13,24 @@
 
 function postData(input) {
     $.ajax({
-        type: "POST",
-        url: "/reverse_pca.py",
-        data: { param: input },
-        success: callbackFunc
+        type: "GET",
+        url: "http://localhost:8080",
+        //data: { param: input },
+        success : function(text)
+         {
+             console.log(text);
+         }
     });
+
 }
 
 function callbackFunc(response) {
     // do something with the response
+	alert(response.toString());
     console.log(response);
 }
 
 
 document.getElementById("submitButton").addEventListener("click", function(){
-		System.Diagnostics.Process.Start("python.exe", "../dataParser/parsedata.py --keyword Legislator");
-		alert('hi')
+	//postData('HI')
 });
