@@ -17,7 +17,7 @@ io.on('connection', function(socket){
 
     socket.on('message', function(msg){
         arr.push(msg);
-        console.log('Received Message: ', msg)
+        console.log('Received Message: ', msg);
         
         
         io.emit('message', msg);
