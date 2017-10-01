@@ -1,37 +1,49 @@
 //workbcjobs.api.gov.bc.ca/v1
-var rp = require("Request-Promise-Native");
-var PythonShell = require('python-shell');
 
+//var PythonShell = require('python-shell');
 
-// var url = "https://catalogue.data.gov.bc.ca/api/action/datastore_search?resource_id=df92bf55-45b2-42a3-b5a8-6d2857df2ffe&limit=500"
-// var options = {
-//   url: url,
-//   headers: {
-//     'User-Agent': 'Request-Promise-Native'
-//   },
-//   // body: {
-//   //   id: 1,
-//   //   Caption: "Full-time"
-//   // },
-//   // json: true
 //
+// var options = {
+//   args: ['--field 0 --education 0']
 // };
 //
-//
-// rp(options).then(function (ret) {
-//
-//   console.log(JSON.parse(ret)['result']['records']);
-//
-//
-//
+// PythonShell.run('parsedata.py', function (err, data) {
+//   if (err) throw err;
+//   console.log(data);
 // });
 
-var options = {
-  args: ['--field 0 --education 0']
-};
 
-PythonShell.run('parsedata.py', function (err, data) {
-  if (err) throw err;
-  console.log(data);
+http = require('http');
+fs = require('fs');
+server = http.createServer( function(req, res) {
+
+    console.dir(req.param);
+
+    if (req.method == 'POST') {
+        console.log("POST");
+        var body = '';
+        req.on('data', function (data) {
+            body += data;
+            console.log("Partial body: " + body);
+        });
+        req.on('end', function () {
+            console.log("Body: " + body);
+        });
+        res.writeHead(200, {'Content-Type': 'text/html'});
+        res.end('post received');
+    }
+    else
+    {
+        console.log("GET");
+        //var html = '<html><body><form method="post" action="http://localhost:3000">Name: <input type="text" name="name" /><input type="submit" value="Submit" /></form></body>';
+        //var html = fs.readFileSync('index.html');
+        res.writeHead(200, {'Content-Type': 'text/html'});
+        res.end("thanks");
+    }
+
 });
 
+port = 3000;
+host = '127.0.0.1';
+server.listen(port, host);
+console.log('Listening at http://' + host + ':' + port);
