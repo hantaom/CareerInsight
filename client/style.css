@@ -14,13 +14,12 @@ body{
 main{
     background-color: ghostwhite;
     margin: 20px auto;
-    max-width: 450px;
+    max-width: 490px;
     padding: 20px;
     border: 2px solid;
     border-radius: 25px;
     border-color: ghostwhite;
 }
-
 
 button {
     background-color: cornflowerblue;
@@ -42,7 +41,7 @@ input {
 }
 
 #initials{
-    margin-left: 45px;
+    margin-left: 20px;
 }
 
 li {

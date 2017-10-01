@@ -5,7 +5,6 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/index.html" afterPath="$PROJECT_DIR$/client/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/style.css" afterPath="$PROJECT_DIR$/client/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/homeStudent/index.html" afterPath="$PROJECT_DIR$/homeStudent/index.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -33,8 +32,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/client/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="73">
-              <caret line="9" column="31" lean-forward="false" selection-start-line="9" selection-start-column="31" selection-end-line="9" selection-end-column="31" />
+            <state relative-caret-position="489">
+              <caret line="36" column="53" lean-forward="false" selection-start-line="36" selection-start-column="53" selection-end-line="36" selection-end-column="53" />
               <folding>
                 <element signature="n#style#0;n#ol#0;n#main#0;n#body#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#input#0;n#form#0;n#main#0;n#body#0;n#!!top" expanded="true" />
@@ -43,11 +42,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
+      <file leaf-file-name="style.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/client/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3021">
-              <caret line="57" column="19" lean-forward="true" selection-start-line="57" selection-start-column="19" selection-end-line="57" selection-end-column="19" />
+            <state relative-caret-position="3180">
+              <caret line="60" column="24" lean-forward="true" selection-start-line="60" selection-start-column="24" selection-end-line="60" selection-end-column="24" />
               <folding />
             </state>
           </provider>
@@ -73,11 +72,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Login/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="371">
-              <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+            <state relative-caret-position="265">
+              <caret line="5" column="14" lean-forward="false" selection-start-line="5" selection-start-column="14" selection-end-line="5" selection-end-column="14" />
               <folding />
             </state>
           </provider>
@@ -117,9 +116,9 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/server.js" />
-        <option value="$PROJECT_DIR$/client/style.css" />
         <option value="$PROJECT_DIR$/homeStudent/index.html" />
         <option value="$PROJECT_DIR$/client/index.html" />
+        <option value="$PROJECT_DIR$/client/style.css" />
       </list>
     </option>
   </component>
@@ -137,9 +136,9 @@
   <component name="NodeModulesDirectoryManager">
     <handled-path value="$PROJECT_DIR$/node_modules" />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1588" />
-    <option name="width" value="1626" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="1092" />
+    <option name="width" value="2122" />
     <option name="height" value="1714" />
   </component>
   <component name="ProjectView">
@@ -275,7 +274,7 @@
       <option name="presentableId" value="Default" />
       <updated>1506854441137</updated>
       <workItem from="1506854442556" duration="4027000" />
-      <workItem from="1506881416249" duration="3230000" />
+      <workItem from="1506881416249" duration="4149000" />
     </task>
     <task id="LOCAL-00001" summary="Updated UI for chat function">
       <created>1506881204743</created>
@@ -291,11 +290,18 @@
       <option name="project" value="LOCAL" />
       <updated>1506883557644</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Updated links for Nav bar and changed title of chat page">
+      <created>1506884691047</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1506884691047</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="18760000" />
+    <option name="totallyTimeSpent" value="19679000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -307,13 +313,13 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-16" y="-16" width="3232" height="1732" extended-state="6" />
+    <frame x="1092" y="0" width="2122" height="1714" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24984168" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.507722" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32987553" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32987553" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3340336" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32987553" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -342,7 +348,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Updated UI for chat function" />
     <MESSAGE value="Updated link for Nav bar" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated link for Nav bar" />
+    <MESSAGE value="Updated links for Nav bar and changed title of chat page" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated links for Nav bar and changed title of chat page" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -518,18 +525,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/style.css">
+    <entry file="file://$PROJECT_DIR$/Login/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3021">
-          <caret line="57" column="19" lean-forward="true" selection-start-line="57" selection-start-column="19" selection-end-line="57" selection-end-column="19" />
+        <state relative-caret-position="265">
+          <caret line="5" column="14" lean-forward="false" selection-start-line="5" selection-start-column="14" selection-end-line="5" selection-end-column="14" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/client/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="73">
-          <caret line="9" column="31" lean-forward="false" selection-start-line="9" selection-start-column="31" selection-end-line="9" selection-end-column="31" />
+        <state relative-caret-position="489">
+          <caret line="36" column="53" lean-forward="false" selection-start-line="36" selection-start-column="53" selection-end-line="36" selection-end-column="53" />
           <folding>
             <element signature="n#style#0;n#ol#0;n#main#0;n#body#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#input#0;n#form#0;n#main#0;n#body#0;n#!!top" expanded="true" />
@@ -537,10 +544,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Login/index.html">
+    <entry file="file://$PROJECT_DIR$/client/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="371">
-          <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+        <state relative-caret-position="3180">
+          <caret line="60" column="24" lean-forward="true" selection-start-line="60" selection-start-column="24" selection-end-line="60" selection-end-column="24" />
           <folding />
         </state>
       </provider>
