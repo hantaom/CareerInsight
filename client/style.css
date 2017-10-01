@@ -1,8 +1,7 @@
 body{
     font-family: 'Helvetica Neue', 'Arial', sans-serif;
     background-image: url(http://www.interliance.com/NEWSITE/wp-content/uploads/Business.jpg);
-    background-size: 1000px auto;
-    background-attachment: fixed;
+    background-size: 2000px auto;
     opacity: 0.9;
     top: 0;
     left: 0;
@@ -15,13 +14,12 @@ body{
 main{
     background-color: ghostwhite;
     margin: 20px auto;
-    max-width: 450px;
+    max-width: 490px;
     padding: 20px;
     border: 2px solid;
     border-radius: 25px;
     border-color: ghostwhite;
 }
-
 
 button {
     background-color: cornflowerblue;
@@ -43,7 +41,7 @@ input {
 }
 
 #initials{
-    margin-left: 45px;
+    margin-left: 20px;
 }
 
 li {
@@ -62,4 +60,9 @@ li:nth-child(odd) {
     border: 2px solid;
     border-radius: 10px;
     border-color: white;
+}
+
+h1{
+    color: white;
+    padding: 15px;
 }

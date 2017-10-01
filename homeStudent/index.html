@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" xmlns:height="http://www.w3.org/1999/xhtml">
-<div overflow="scroll" id>
+<div overflow="scroll">
 <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -10,8 +10,8 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
-    <nav class="navbar navbar-expand-lg ">
-        <a class="navbar-brand disabled" href="#">CareerInsight</a>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand disabled" href="../index.html">CareerInsight</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -19,10 +19,10 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
-                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="../homeStudent/index.html">Home <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="../client/index.html">Connect</a>
+                    <a class="nav-link" href="http://localhost:8080/#">Connect</a>
                 </li>
             </ul>
             <form class="form-inline my-2 my-lg-0">
@@ -35,7 +35,7 @@
 
 <body>
 <div class="first">
-    <a href="" class="button"><span></span>Field</a>
+    <label for="field">Field</label>
     <br>
     <select class="field" id="field" style="width: 400px; height: 40px;" onChange="getField(this);">
         <option disabled="true" selected="true">Please select a field of interest</option>
@@ -73,16 +73,28 @@
 
 <div class="second">
     <label for="education" >Please indicate your desired level of education/training:</label>
-    <br><a id="A" class="button purple"><span>A:</span>• University degree (bachelor's, master's or doctorate)</a>
-    <br><a id="B"  class="button turquoise"><span>B:</span>• Two to three years of post-secondary education at community college, institute of technology or CÉGEP</a>
     <br>
-        <a id="B2" class="button turquoise"><span></span>• Two to five years of apprenticeship training</a>
-
+    <label for="education">A: • University degree (bachelor's, master's or doctorate)</label>
     <br>
-    <a id="C" class="button red"><span>C:</span>• Completion of secondary school and some short-duration courses or training specific to
-        the occupation</a>
+    <label for="education">B: • Two to three years of post-secondary education at community college, institute of technology or CÉGEP
+        <br>    or<br>
+        • Two to five years of apprenticeship training
+        <br>or<br>
+        • Three to four years of secondary school and more than two years of on-the-job training,
+        occupation-specific training courses or specific work experience<br>
+        • Occupations with supervisory responsibilities are also assigned to skill level B.<br>
+        • Occupations with significant health and safety responsibilities (e.g., fire fighters, police
+        officers and licensed practical nurses) are assigned to skill level B.</label>
     <br>
-    <a id="D" class="button orange"><span>D:</span>• Short work demonstration or on-the-job training</a>
+    <label for="education">C: • Completion of secondary school and some short-duration courses or training specific to
+        the occupation
+        or
+        • Some secondary school education, with up to two years of on-the-job training, training
+        courses or specific work experience</label>
+    <br>
+    <label for="education">D: • Short work demonstration or on-the-job training
+        <br> or<br>
+        • No formal educational requirements</label>
     <br>
 
     <select class="education" id="education" style="width: 400px; height: 40px;" onChange="getEdu(this);" disabled="disabled">
